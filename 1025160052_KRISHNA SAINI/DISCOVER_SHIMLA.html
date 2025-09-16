@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Shimla</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #fdfdfd;
+    }
+
+    header {
+      background: url('shimla.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      font-size: 4rem;
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background: #2c3e50;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .places {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      background: white;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    #map img {
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Shimla</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#places">Places</a>
+    <a href="#map">Tourist Map</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Shimla</h2>
+    <p>
+      Shimla, the capital of Himachal Pradesh, is known as the "Queen of Hills".
+      Surrounded by snow-capped peaks and lush green valleys, it’s a perfect destination
+      for nature lovers, honeymooners, and adventure seekers. With its colonial charm,
+      bustling Mall Road, and panoramic views, Shimla attracts tourists from all over
+      the world.
+    </p>
+  </section>
+
+  <!-- Places to Visit -->
+  <section id="places">
+    <h2>Top Places to Visit</h2>
+    <div class="places">
+      <div class="card">
+        <img src="mall-road.jpg" alt="Mall Road">
+        <h3>Mall Road</h3>
+        <p>Popular shopping street with restaurants, cafes, and shops.</p>
+      </div>
+      <div class="card">
+        <img src="jakhoo-temple.jpg" alt="Jakhoo Temple">
+        <h3>Jakhoo Temple</h3>
+        <p>Ancient Hanuman temple offering stunning views of Shimla.</p>
+      </div>
+      <div class="card">
+        <img src="kufri.jpg" alt="Kufri">
+        <h3>Kufri</h3>
+        <p>Famous for skiing and breathtaking snow-covered landscapes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tourist Map Section -->
+  <section id="map">
+    <h2>Tourist Map of Shimla</h2>
+    <p style="text-align:center;">Explore the major tourist attractions of Shimla below:</p>
+
+    <!-- Static Map Image -->
+    <div style="text-align:center;">
+      <img src="shimla-tourist-map.jpg" alt="Tourist Map of Shimla">
+    </div>
+
+    <!-- Interactive Google Map -->
+    <div style="text-align:center;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.1726460123!2d77.17340341445626!3d31.104814481505327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578e152fb67cf%3A0x466f3e9ac9c7e6d!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1694497316877!5m2!1sen!2sin"
+        width="90%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: travelshimla@example.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Discover Shimla | Designed with ❤</p>
+  </footer>
+
+</body>
+</html>
